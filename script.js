@@ -189,7 +189,7 @@ function loadBooks() {
                     <img src="./assets/heart_icon.svg" alt="Herz Icon"></img>
                     </div>
                 </div>
-             <table>
+             <table class="book-info">
              <tr>
                 <td><b>Autor:</b></th>
                 <td>${books[index].author}</th>
@@ -203,12 +203,12 @@ function loadBooks() {
                 <td>${books[index].genre}</td>
              </tr>
              </table>
-             <h3>Kommentare</h3>
+             <h3>Kommentare:</h3>
                 <div class="comments">
-                <p>${getComments(index)}</p>
+                ${getComments(index)}
                 </div>
              </div>
-             <input class="pages" type="text" placeholder="  Kommentieren">
+             <input class="pages" type="text" placeholder="  Schreibe einen Kommentar">
          </div>
                 
   `
@@ -217,14 +217,17 @@ function loadBooks() {
 
 function getComments(i) {
     let comments = "";
-    for (let index = 0; index < books[i].comments.length; index++) {
-        comments +=`
-        <table>
-            <tr>
-            <td><b>${books[i].comments[index].name}:</b></th>
-            <td>${books[i].comments[index].comment}</th>
-            </tr>
-         </table>`
+    if (books[i].comments.length >= 1) {
+        
+        for (let index = 0; index < books[i].comments.length; index++) {
+            comments +=`
+                <tr>
+                <td><b>${books[i].comments[index].name}:</b></td>
+                <td>${books[i].comments[index].comment}</td>
+                </tr>`
+        }
+        return `<table>${comments}</table>`;
+    } else{
+        return `<p>Schreibe hier den ersten Kommentar</p>`;
     }
-    return comments;
 }

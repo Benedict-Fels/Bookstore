@@ -101,7 +101,7 @@ section {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 16px;
+    padding: 8px 8px;
     box-sizing: border-box;
 }
 
@@ -116,12 +116,33 @@ section {
     margin: 0 8px;
 }
 
-/* .likes img g path {
-    fill: red;
-} */
-
 .book-content table {
     padding: 4px 4px;
+}
+
+.book-info{
+    font-size: 14px;
+}
+
+.comments {
+    height: 140px;
+    overflow-y: auto;
+}
+
+.comments p{
+    padding: 6px;
+    color: lightgray;
+}
+
+.comments td{
+    vertical-align: top;
+    font-size: 12px;
+    color: lightgray;
+}
+
+.comments b{
+    font-size: 12px;
+    color: lightgray;
 }
 
 .pages {
@@ -141,11 +162,6 @@ section {
     height: 100vh;
     position: sticky;
     top: 0px;
-}
-
-.comments {
-    height: 140px;
-    overflow-y: auto;
 }
 
 footer {
