@@ -178,36 +178,39 @@ function loadBooks() {
     const booksLocation = document.getElementById("contentsID");
     for (let index = 0; index < books.length; index++) {
         booksLocation.innerHTML += `
-         <div class="book-content">
+         <div class="book-outlay">
+             <div class="book-content">
              <h2>${books[index].name}</h2>
-            <img class="book-icon" src="./assets/book2.png" alt="Buch Icon"></img>
-           <div class ="price-and-likes">
-          <p>${books[index].price.toFixed(2)} Є</p>
-          <div class="likes">
-          <p>${books[index].likes}</p>
-            <img src="./assets/heart_icon.svg" alt="Herz Icon"></img>
-            </div>
-           </div>
-           <table>
-  <tr>
-    <td><b>Autor:</b></th>
-    <td>${books[index].author}</th>
-  </tr>
-  <tr>
-    <td><b>Erscheinungsjahr:</b></td>
-    <td>${books[index].publishedYear}</td>
-  </tr>
-  <tr>
-    <td><b>Genre:</b></td>
-    <td>${books[index].genre}</td>
-  </tr>
-  </table>
-  <div class="comments">
-  <h3>Kommentare</h3>
-  <p>${getComments(index)}</p>
-  </div>
-  <div class="pages"></div>
-  </div>
+             <img class="book-icon" src="./assets/book2.png" alt="Buch Icon"></img>
+                <div class ="price-and-likes">
+                <p>${books[index].price.toFixed(2)} Є</p>
+                    <div class="likes">
+                    <p>${books[index].likes}</p>
+                    <img src="./assets/heart_icon.svg" alt="Herz Icon"></img>
+                    </div>
+                </div>
+             <table>
+             <tr>
+                <td><b>Autor:</b></th>
+                <td>${books[index].author}</th>
+             </tr>
+             <tr>
+               <td><b>Erscheinungsjahr:</b></td>
+                <td>${books[index].publishedYear}</td>
+             </tr>
+             <tr>
+                <td><b>Genre:</b></td>
+                <td>${books[index].genre}</td>
+             </tr>
+             </table>
+             <h3>Kommentare</h3>
+                <div class="comments">
+                <p>${getComments(index)}</p>
+                </div>
+             </div>
+             <input class="pages" type="text" placeholder="  Kommentieren">
+         </div>
+                
   `
     }
 }
