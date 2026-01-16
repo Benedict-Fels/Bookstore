@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    font-size: 16px;
+}
+
+header {
+    background-color: rgb(233, 231, 225);
+     display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 56px;
+    padding: 36px 36px;
+}
+
+h2 {
+    font-size: 24px;
+    padding:16px 16px;
+    text-align: center;
+}
+
+.top-shelf {
+    width: 160px;
+}
+
+.bottom-shelf {
+    width: 160px;
+    position: relative;
+    bottom: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 24px 24px;
+    
+}
+
+.book-content{
+    height: 450px;
+    width: 300px;
+    background-color: #3AB37C;
+    border: 1px black solid;
+    border-radius: 10% 0 0 5%;
+    margin: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book-icon{
+    height: 64px;
+    object-fit: contain;
+    /* padding: 16px; */
+    border-radius: 10%;
+    /* background-color: #FFC900; */
+}
+
+.price-and-likes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+.likes{
+    display: flex;
+    align-items: center;
+}
+
+.likes img{
+    background-color: lightblue;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.likes img g path{
+    fill: red;
+}
+
+.pages{
+    height: 36px;
+    background-color: white;
+    width: 100%;
+    border: #3AB37C 3px solid;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.book-shelf {
+    width: 160px;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+}
+
+.comments{
+    height: 80px;
+    overflow-y: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-image: url(./assets/background/woodfloor.png);
+}
+
+@media (min-width: 1760px) {
+    .book-shelf {
+        width: calc(50% - 720px);
+    }
+
+    .top-shelf {
+        width: calc(50% - 720px);
+    }
+
+    .bottom-shelf {
+        width: calc(50% - 720px);
+    }
+}
