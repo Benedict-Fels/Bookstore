@@ -16,9 +16,8 @@ header {
 }
 
 .glasses {
-    height: 36px;
+    height: 28px;
     object-fit: contain;
-    /* padding: 0 6px; */
 }
 
 body {
@@ -64,7 +63,7 @@ section {
 }
 
 .book-outlay {
-    height: 450px;
+    height: 460px;
     width: 300px;
     background-color: rgb(8, 67, 8);
     border: 1px black solid;
@@ -91,9 +90,7 @@ section {
 .book-icon {
     height: 64px;
     object-fit: contain;
-    /* padding: 16px; */
     border-radius: 10%;
-    /* background-color: #FFC900; */
 }
 
 .price-and-likes {
@@ -110,17 +107,33 @@ section {
     align-items: center;
 }
 
-.likes img {
-    background-color: lightblue;
+.heart{
+    color:red;
+    fill: transparent;
+    stroke: currentColor;
+    stroke-width: 2.5;
     border-radius: 50%;
-    margin: 0 8px;
+}
+
+.heart path:hover {
+    stroke: currentColor;
+    cursor: pointer;
+}
+
+.heart-darkred{
+    color: darkred;
+    stroke: darkred;
+}
+
+.heart-filling{
+    fill: currentColor;
 }
 
 .book-content table {
     padding: 4px 4px;
 }
 
-.book-info{
+.book-info {
     font-size: 14px;
 }
 
@@ -129,18 +142,18 @@ section {
     overflow-y: auto;
 }
 
-.comments p{
+.comments p {
     padding: 6px;
     color: lightgray;
 }
 
-.comments td{
+.comments td {
     vertical-align: top;
     font-size: 12px;
     color: lightgray;
 }
 
-.comments b{
+.comments b {
     font-size: 12px;
     color: lightgray;
 }
@@ -148,13 +161,35 @@ section {
 .pages {
     height: 36px;
     background-color: white;
+    font-size: 14px;
     width: 100%;
     border: rgb(4, 39, 4) 3px solid;
     border-right: none;
     border-radius: 20px 0 0 20px;
-    padding: 3px;
+    padding: 5px;
     box-sizing: border-box;
     bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-input{
+    flex-grow: 1;
+    border: none;
+    height: 28px;
+    border-radius: 20px 0 0 20px;
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.send-icon{
+    height: 14px;
+    object-fit: contain;
+}
+
+.send-icon:hover {
+    cursor: pointer;
 }
 
 .book-shelf {
