@@ -221,6 +221,20 @@ footer {
     padding: 12px;
 }
 
+.footer-content p {
+    color: black;
+}
+
+.developer-academy {
+    display: flex;
+    align-items: center;
+}
+
+.developer-academy span {
+    color: black;
+    font-size: 20px;
+}
+
 @media (min-width: 1760px) {
     .book-shelf {
         width: calc(50% - 720px);
