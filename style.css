@@ -278,8 +278,13 @@ footer {
         padding: 0 0;
     }
 
+    .headline {
+        padding: 12px 12px;
+        font-size: 44px;
+    }
+
     .book-outlay {
-        width: 290px;
+        width: 260px;
     }
 
     .comments {
