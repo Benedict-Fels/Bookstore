@@ -245,7 +245,7 @@ footer {
         width: 100%;
     }
 
-    header{
+    header {
         justify-content: center;
     }
 }
@@ -255,11 +255,11 @@ footer {
         padding: 0 0;
     }
 
-    .book-outlay{
+    .book-outlay {
         width: 290px;
     }
 
-    .comments{
+    .comments {
         height: 125px;
     }
 

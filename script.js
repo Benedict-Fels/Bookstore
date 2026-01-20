@@ -240,13 +240,6 @@ function getComments(i) {
     }
 }
 
-// document.addEventListener('keydown', function (event) {
-//     if (event.key === 'Enter') {
-//         comment();
-//     }
-// }
-// )
-
 function comment(index){
     let comment = document.getElementById(`inputID${index}`);
     let obj = {};
